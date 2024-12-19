@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet"  href="styles.css" type="text/css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac Toe</title>
+    
+</head>
+
+<style>
+    @media (max-width: 600px) {
+        .cell {
+            width: 60px;
+            height: 60px;
+        }
+
+        #tic-tac-toe-board {
+            grid-template-columns: repeat(3, 60px);
+            grid-template-rows: repeat(3, 60px);
+        }
+    }
+
+    #tttgameBoard{
+        
+        display:grid;
+        grid-template-columns: repeat(3,100px);
+        grid-template-rows: repeat(3,100px);
+        gap:10px;
+        position:relative;
+        justify-content:center;
+    }
+    .tttcell{
+        background-color:rgb(0, 0, 0);
+        border: 2px double lawngreen;
+        border-radius:15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100px;
+        height: 100px;
+        margin:5px;
+        
+    }
+    .tttcell:hover{
+        background-color:rgb(47, 43, 54);
+    }
+
+    .game-message{
+        margin:auto;
+
+        width: 350px;
+        height: 25px;
+    }
+
+    a:link{
+    color:antiquewhite
+}
+a:hover{
+    color:aquamarine
+}
+a:visited{
+    color:antiquewhite
+}
+body{
+    background-color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:antiquewhite;
+}
+
+#container{
+    background-color:rgb(0, 0, 0);
+    border: 5px double lawngreen;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 700px;
+    height: 700px;
+    text-align:center;
+    color:antiquewhite;
+    border-radius:20px;
+
+}
+
+#sitelink{
+    background-color:rgb(0, 0, 0);
+    border: 5px double lawngreen;
+    margin: auto;
+    margin-top: 3px;
+    padding: 10px;
+    width: 700px;
+    height: 15px;
+    text-align:center;
+    color:antiquewhite;
+    border-radius:20px;
+
+}
+
+</style>
+
+<body>
+
+    <div id="container">
+        <h2>Tic Tac Toe</h2>
+        <br>
+
+        <div id="tttgameBoard">
+            <div class="tttRow">
+                <div class="tttcell" id="cell-1"></div>
+                <div class="tttcell" id="cell-2"></div>
+                <div class="tttcell" id="cell-3"></div>
+            </div>
+            <div class="tttRow">
+                <div class="tttcell" id="cell-4"></div>
+                <div class="tttcell" id="cell-5"></div>
+                <div class="tttcell" id="cell-6"></div>
+            </div>
+            <div class="tttRow">
+                <div class="tttcell" id="cell-7"></div>
+                <div class="tttcell" id="cell-8"></div>
+                <div class="tttcell" id="cell-9"></div>
+            </div>
+
+
+        </div><br>
+        <div id="gameMessage" class="game-message"></div>
+        <button id="resetButton"> Reset </button>
+
+
+
+
+
+
+    </div>
+    <br>
+    
+    <div id="sitelink"><a href="https://github.com/introvertices">https://github.com/introvertices</a></div>
+    
+
+
+    <script src = "ttt.js"></script>
+</body>
+</html>
